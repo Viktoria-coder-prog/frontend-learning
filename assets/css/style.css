@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     background-color:lightpink;
     height: 177px;
@@ -12,7 +17,7 @@
 }
 
 .logo {
-    width: 900px;
+    width: 400px;
     padding-bottom: 40px;
 }
 
@@ -32,5 +37,37 @@
 .logo_text h2{
     font-size: 1.5em;
     padding: 4px 0 0 0;
+    color: hotpink;
+}
+
+.menubar{
+    width: 900px;
+    height: 46px;
+}
+
+ul.menu {
+    float: left;
+}
+
+ul.menu li{
+    float: left;
+    padding: 0 0 0 9px;
+    list-style: none;
+    margin: 1px 2px 0 0;
+}
+
+ul.menu li a{
+    font:italic 100% "Fira Sans", serif;
+    text-decoration: none;
+    display: block;
+    height: 10px;
+    padding: 15px 35px 25px 48px;
+}
+
+ul.menu li.selected a{
+    color:#fff;
+}
+
+ul.menu li a:hover{
     color: hotpink;
 }
